@@ -1,0 +1,33 @@
+{
+  "name": "PASIYA-MD-PRIME",
+  "description": "POWERED_BUY PASIYA-MD PRIME BOT - WhatsApp Multi Device Bot",
+  "repository": "https://github.com/PASIYAv12/PASIYA-MD-PRIME",
+  "logo": "https://files.catbox.moe/zmln91.jpg",
+  "keywords": ["whatsapp", "bot", "pasiya-md", "prime", "multi-device"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your WhatsApp Session ID here",
+      "required": true
+    },
+    "OWNER_NUMBERS": {
+      "description": "Owner numbers separated by commas (example: 94784548818,94766359869)",
+      "required": true,
+      "value": "94784548818,94766359869"
+    },
+    "OWNER_NAME": {
+      "description": "Owner name",
+      "required": true,
+      "value": "Pasidu Sampath"
+    },
+    "PREFIX": {
+      "description": "Command Prefix",
+      "required": false,
+      "value": "."
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
