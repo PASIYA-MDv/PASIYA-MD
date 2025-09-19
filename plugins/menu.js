@@ -30,3 +30,51 @@ More plugins coming soon... 🚀
     }
   }
 }
+
+
+main menu 
+Command version info
+
+const { cmd } = require('../lib/commands');
+
+cmd({
+  pattern: ['menu', 'help', 'මෙනු'],
+  desc: 'Display main bot command list',
+  category: 'Main',
+  use: '.menu',
+  filename: __filename
+}, async (message, match, client) => {
+  const menuText = 
+💠 *PASIYA-MD PRIME BOT - MENU*
+╭───────────────
+│👑 Owner: Pasidu Sampath
+│🤖 Bot: PASIYA-MD PRIME
+│🌐 Version: 100.0.9 ULTRA
+│📆 Updated: 2025-09-19
+╰───────────────
+
+📍 *Main Commands*
+├ .menu / .help - Show this menu
+├ .ai [msg] - Ask AI
+├ .sticker - Image to sticker
+├ .photo - Sticker to image
+├ .tr [text] - Translate text
+├ .status - Status seen reply
+├ .news - Market updates
+
+📊 *Forex/Trading*
+├ .signal [XAU/USD] - Trading signal
+├ .profit - Show daily profit
+├ .trade - Auto trade
+
+🛠 *Tools*
+├ .pdf [img] - Make PDF
+├ .short [link] - URL shortener
+├ .tts [text] - Text to audio
+
+🔐 Powered by PASIYA-MD PRIME BOT
+
+
+  await client.sendMessage(message.jid, { text: menuText }, { quoted: message });
+});
+POWERED_BUY PASIYA-MD  LAAST UPDATE  PRIME ULTRA BOT 
