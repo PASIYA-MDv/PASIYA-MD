@@ -68,7 +68,7 @@ function getCredFiles(folder) {
       const id = config.SESSION_ID;
 
       // Base64 type
-      if (id.startsWith("YASIYA-MD=")) {
+      if (id.startsWith("PASIYA-MD=")) {
         try {
           const sessdata = id.split("=")[1];
           const base64Decode = (str) => Buffer.from(str, "base64").toString("utf-8");
@@ -86,7 +86,7 @@ function getCredFiles(folder) {
         }
 
       // YMD DB type
-      } else if (id.startsWith("YASIYA-MD?")) {
+      } else if (id.startsWith("PASIYA-MD?")) {
           
         try {
           const sessdata = id.split("?")[1];
@@ -115,7 +115,7 @@ function getCredFiles(folder) {
         }
 
       // MEGA type
-      } else if (id.startsWith("YASIYA-MD~")) {
+      } else if (id.startsWith("PASIYA-MD~")) {
         try {
           const sessdata = id.split("~")[1];
 
@@ -1872,6 +1872,7 @@ process.on("uncaughtException", function (err) {
  }
 
 module.exports = yasiyaMd;
+
 
 
 
