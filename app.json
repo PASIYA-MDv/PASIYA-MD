@@ -1,0 +1,27 @@
+
+{
+  "name": "PASIYA-MD",
+  "description": "WhatsApp MD Bot | Powered by PASIYA-MD",
+  "repository": "https://github.com/PASIYA-MDv/PASIYA-MD-.git",
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "multi-device",
+    "nodejs"
+  ],
+  "env": {
+    "SESSION_ID": {
+      "description": "Paste your SESSION_ID here. Generate from: https://whatsapp.pasiya-md.xyz/",
+      "required": true
+    },
+    "MONGODB": {
+      "description": "Your MongoDB URI here",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
