@@ -18,7 +18,7 @@ async function start() {
     }
 
   } catch (error) {
-    console.error('❌ Error in start YASIYA-MD():', error.message);
+    console.error('❌ Error in start PASIYA-MD():', error.message);
   }
 }
 
